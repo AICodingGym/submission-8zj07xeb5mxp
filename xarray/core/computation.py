@@ -1727,24 +1727,19 @@ def dot(*arrays, dims=None, **kwargs):
     return result.transpose(*all_dims, missing_dims="ignore")
 
 
-def where(cond, x, y):
+def where(cond, x, y, keep_attrs=None):
     """Return elements from `x` or `y` depending on `cond`.
-
-    Performs xarray-like broadcasting across input arguments.
-
-    All dimension coordinates on `x` and `y`  must be aligned with each
-    other and with `cond`.
 
     Parameters
     ----------
     cond : scalar, array, Variable, DataArray or Dataset
-        When True, return values from `x`, otherwise returns values from `y`.
-    x : scalar, array, Variable, DataArray or Dataset
-        values to choose from where `cond` is True
-    y : scalar, array, Variable, DataArray or Dataset
-        values to choose from where `cond` is False
+        When True, yield `x`, otherwise yield `y`.
+    x, y : scalar, array, Variable, DataArray or Dataset
+        values to choose from, merged or broadcasted
+    keep_attrs : bool or None, optional
+        Whether to copy attributes from the first argument to the output.
 
-    Returns
+Returns
     -------
     Dataset, DataArray, Variable or array
         In priority order: Dataset, DataArray, Variable or array, whichever
@@ -1808,7 +1803,13 @@ def where(cond, x, y):
     Dataset.where, DataArray.where :
         equivalent methods
     """
-    # alignment for three arguments is complicated, so don't support it yet
+    if keep_attrs is None:
+        keep_attrs = _get_keep_attrs(default=False)
+
+    if keep_attrs is True:
+        # Attributes must be preserved from x, not cond
+        keep_attrs = lambda attrs, context=None: getattr(x, "attrs", {})
+
     return apply_ufunc(
         duck_array_ops.where,
         cond,
@@ -1817,6 +1818,7 @@ def where(cond, x, y):
         join="exact",
         dataset_join="exact",
         dask="allowed",
+        keep_attrs=keep_attrs,
     )
 
 
