@@ -1,0 +1,316 @@
+data ready 8.9s  train breaths=54324 val breaths=13581 test breaths=7545  feats=19
+model params=5,920,769  steps/epoch=107
+ep   1  train 13.9650  val 7.6402  lr 5.05e-05  vram peak 2.44G reserved 3.80G  14.5s *
+ep   2  train 6.2167  val 3.6809  lr 8.15e-05  vram peak 2.44G reserved 3.80G  13.5s *
+ep   3  train 2.5371  val 2.1165  lr 1.32e-04  vram peak 2.44G reserved 3.80G  13.7s *
+ep   4  train 1.9729  val 1.9572  lr 1.99e-04  vram peak 2.44G reserved 3.80G  13.8s *
+ep   5  train 1.8227  val 1.8910  lr 2.80e-04  vram peak 2.44G reserved 3.80G  14.0s *
+ep   6  train 1.6859  val 1.2785  lr 3.72e-04  vram peak 2.44G reserved 3.80G  13.9s *
+ep   7  train 1.4994  val 1.3398  lr 4.70e-04  vram peak 2.44G reserved 3.80G  13.8s
+ep   8  train 1.4518  val 1.6408  lr 5.71e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep   9  train 1.4162  val 1.2835  lr 6.69e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  10  train 1.3742  val 1.1103  lr 7.61e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep  11  train 1.3336  val 1.4185  lr 8.42e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  12  train 1.1324  val 0.9167  lr 9.09e-04  vram peak 2.44G reserved 3.80G  14.1s *
+ep  13  train 1.0581  val 0.9390  lr 9.59e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  14  train 1.0196  val 0.9049  lr 9.90e-04  vram peak 2.44G reserved 3.80G  14.1s *
+ep  15  train 0.9909  val 0.8148  lr 1.00e-03  vram peak 2.44G reserved 3.80G  14.0s *
+ep  16  train 0.9639  val 0.9238  lr 1.00e-03  vram peak 2.44G reserved 3.80G  13.8s
+ep  17  train 0.9306  val 0.8263  lr 1.00e-03  vram peak 2.44G reserved 3.80G  13.8s
+ep  18  train 0.9140  val 0.8844  lr 1.00e-03  vram peak 2.44G reserved 3.80G  13.8s
+ep  19  train 0.8967  val 0.7340  lr 1.00e-03  vram peak 2.44G reserved 3.80G  13.8s *
+ep  20  train 0.8542  val 0.7439  lr 9.99e-04  vram peak 2.44G reserved 3.80G  13.8s
+ep  21  train 0.8549  val 0.8929  lr 9.99e-04  vram peak 2.44G reserved 3.80G  13.9s
+ep  22  train 0.8301  val 0.7593  lr 9.99e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  23  train 0.7796  val 0.6481  lr 9.98e-04  vram peak 2.44G reserved 3.80G  14.0s *
+ep  24  train 0.7943  val 0.6388  lr 9.98e-04  vram peak 2.44G reserved 3.80G  13.8s *
+ep  25  train 0.7830  val 0.6635  lr 9.97e-04  vram peak 2.44G reserved 3.80G  13.7s
+ep  26  train 0.7332  val 0.6758  lr 9.96e-04  vram peak 2.44G reserved 3.80G  13.8s
+ep  27  train 0.7572  val 1.0743  lr 9.96e-04  vram peak 2.44G reserved 3.80G  13.7s
+ep  28  train 0.9739  val 0.8740  lr 9.95e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  29  train 0.7908  val 0.7337  lr 9.94e-04  vram peak 2.44G reserved 3.80G  13.7s
+ep  30  train 0.7730  val 0.6012  lr 9.93e-04  vram peak 2.44G reserved 3.80G  167.1s *
+ep  31  train 0.7432  val 0.8209  lr 9.92e-04  vram peak 2.44G reserved 3.80G  13.7s
+ep  32  train 0.7227  val 0.6299  lr 9.91e-04  vram peak 2.44G reserved 3.80G  13.7s
+ep  33  train 0.7381  val 0.5306  lr 9.90e-04  vram peak 2.44G reserved 3.80G  13.8s *
+ep  34  train 0.7134  val 0.6373  lr 9.89e-04  vram peak 2.44G reserved 3.80G  13.9s
+ep  35  train 0.7043  val 0.6040  lr 9.88e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  36  train 0.7645  val 0.7182  lr 9.87e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  37  train 0.8483  val 0.7434  lr 9.85e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  38  train 0.7008  val 0.5390  lr 9.84e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  39  train 0.6666  val 0.7295  lr 9.83e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  40  train 0.6819  val 0.7356  lr 9.81e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  41  train 0.6504  val 0.5356  lr 9.80e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep  42  train 0.7591  val 0.6985  lr 9.78e-04  vram peak 2.44G reserved 3.80G  14.6s
+ep  43  train 0.6742  val 0.6384  lr 9.76e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  44  train 0.6223  val 0.5546  lr 9.75e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep  45  train 0.6268  val 0.4773  lr 9.73e-04  vram peak 2.44G reserved 3.80G  14.4s *
+ep  46  train 0.5924  val 0.5591  lr 9.71e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  47  train 0.5862  val 0.4840  lr 9.69e-04  vram peak 2.44G reserved 3.80G  14.6s
+ep  48  train 0.5871  val 0.6097  lr 9.67e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  49  train 0.7573  val 0.5773  lr 9.65e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  50  train 0.5989  val 0.6066  lr 9.63e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep  51  train 0.5732  val 0.5527  lr 9.61e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  52  train 0.6812  val 0.6399  lr 9.59e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep  53  train 0.7484  val 0.4772  lr 9.57e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep  54  train 0.6538  val 0.5958  lr 9.54e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  55  train 0.6513  val 0.5039  lr 9.52e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep  56  train 0.6358  val 0.5027  lr 9.50e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  57  train 0.5501  val 0.5356  lr 9.47e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  58  train 0.6965  val 0.4239  lr 9.45e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep  59  train 0.4891  val 0.3803  lr 9.42e-04  vram peak 2.44G reserved 3.80G  14.1s *
+ep  60  train 0.4648  val 0.3812  lr 9.40e-04  vram peak 2.44G reserved 3.80G  13.9s
+ep  61  train 0.5686  val 0.5518  lr 9.37e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  62  train 0.5703  val 0.4328  lr 9.34e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  63  train 0.5732  val 0.4448  lr 9.32e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  64  train 0.5221  val 0.5500  lr 9.29e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  65  train 0.5734  val 0.6744  lr 9.26e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  66  train 0.6574  val 0.5937  lr 9.23e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  67  train 0.5319  val 0.3829  lr 9.20e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  68  train 0.4799  val 0.4871  lr 9.17e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  69  train 0.5938  val 0.4773  lr 9.14e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  70  train 0.5579  val 0.5767  lr 9.11e-04  vram peak 2.44G reserved 3.80G  15.0s
+ep  71  train 0.5259  val 0.4049  lr 9.08e-04  vram peak 2.44G reserved 3.80G  14.6s
+ep  72  train 0.5517  val 0.4505  lr 9.04e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep  73  train 0.4877  val 0.3806  lr 9.01e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  74  train 0.4645  val 0.5069  lr 8.98e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  75  train 0.4631  val 0.4513  lr 8.95e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  76  train 0.4572  val 0.3753  lr 8.91e-04  vram peak 2.44G reserved 3.80G  14.6s *
+ep  77  train 0.4551  val 0.4496  lr 8.88e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep  78  train 0.4473  val 0.4054  lr 8.84e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  79  train 0.4344  val 0.3688  lr 8.81e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep  80  train 0.4388  val 0.4518  lr 8.77e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  81  train 0.4676  val 0.4187  lr 8.73e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  82  train 0.5251  val 0.5262  lr 8.70e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  83  train 0.4766  val 0.3576  lr 8.66e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep  84  train 0.4284  val 0.4284  lr 8.62e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  85  train 0.4204  val 0.3494  lr 8.58e-04  vram peak 2.44G reserved 3.80G  14.0s *
+ep  86  train 0.4262  val 0.4130  lr 8.54e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  87  train 0.4313  val 0.3996  lr 8.51e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  88  train 0.4600  val 0.3439  lr 8.47e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep  89  train 0.4120  val 0.4215  lr 8.43e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  90  train 0.4072  val 0.3462  lr 8.39e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  91  train 0.4222  val 0.3690  lr 8.35e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  92  train 0.4095  val 0.3942  lr 8.30e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  93  train 0.4531  val 0.7488  lr 8.26e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  94  train 0.5332  val 0.3874  lr 8.22e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep  95  train 0.4578  val 0.3743  lr 8.18e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep  96  train 0.5589  val 0.4750  lr 8.14e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep  97  train 0.5577  val 0.4697  lr 8.09e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep  98  train 0.4810  val 0.3549  lr 8.05e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep  99  train 0.3922  val 0.3972  lr 8.01e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 100  train 0.4460  val 0.4237  lr 7.96e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 101  train 0.4049  val 0.5510  lr 7.92e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 102  train 0.4703  val 0.3476  lr 7.87e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 103  train 0.4280  val 0.3861  lr 7.83e-04  vram peak 2.44G reserved 3.80G  14.8s
+ep 104  train 0.4300  val 0.3599  lr 7.78e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 105  train 0.4813  val 0.4074  lr 7.73e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 106  train 0.3871  val 0.3528  lr 7.69e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 107  train 0.4071  val 0.3786  lr 7.64e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 108  train 0.4042  val 0.3084  lr 7.59e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep 109  train 0.3859  val 0.3372  lr 7.55e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 110  train 0.3934  val 0.3298  lr 7.50e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 111  train 0.3973  val 0.3809  lr 7.45e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 112  train 0.3770  val 0.3355  lr 7.40e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 113  train 0.3723  val 0.6205  lr 7.36e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 114  train 0.4053  val 0.5199  lr 7.31e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 115  train 0.4039  val 0.3460  lr 7.26e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 116  train 0.3836  val 0.3275  lr 7.21e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 117  train 0.3679  val 0.3162  lr 7.16e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 118  train 0.3673  val 0.3314  lr 7.11e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 119  train 0.3782  val 0.3531  lr 7.06e-04  vram peak 2.44G reserved 3.80G  15.0s
+ep 120  train 0.3723  val 0.3775  lr 7.01e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep 121  train 0.3307  val 0.3079  lr 6.96e-04  vram peak 2.44G reserved 3.80G  14.8s *
+ep 122  train 0.3346  val 0.2947  lr 6.91e-04  vram peak 2.44G reserved 3.80G  14.4s *
+ep 123  train 0.3594  val 0.2962  lr 6.86e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 124  train 0.3657  val 0.3607  lr 6.80e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 125  train 0.3292  val 0.2941  lr 6.75e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep 126  train 0.3354  val 0.3533  lr 6.70e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 127  train 0.3136  val 0.3110  lr 6.65e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 128  train 0.3100  val 0.3338  lr 6.60e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 129  train 0.3435  val 0.3495  lr 6.54e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 130  train 0.3294  val 0.3958  lr 6.49e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 131  train 0.3488  val 0.2992  lr 6.44e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 132  train 0.3467  val 0.3050  lr 6.39e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 133  train 0.3346  val 0.2972  lr 6.33e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 134  train 0.3240  val 0.2951  lr 6.28e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 135  train 0.3003  val 0.2608  lr 6.23e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep 136  train 0.3146  val 0.2834  lr 6.17e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 137  train 0.3458  val 0.3144  lr 6.12e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 138  train 0.3420  val 0.3000  lr 6.07e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 139  train 0.3150  val 0.3700  lr 6.01e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 140  train 0.3330  val 0.2830  lr 5.96e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 141  train 0.3084  val 0.2974  lr 5.90e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 142  train 0.3180  val 0.3141  lr 5.85e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 143  train 0.2995  val 0.3190  lr 5.80e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 144  train 0.3162  val 0.2745  lr 5.74e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep 145  train 0.3065  val 0.3430  lr 5.69e-04  vram peak 2.44G reserved 3.80G  14.7s
+ep 146  train 0.2992  val 0.2867  lr 5.63e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 147  train 0.2724  val 0.2773  lr 5.58e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 148  train 0.2807  val 0.2503  lr 5.52e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 149  train 0.2756  val 0.4186  lr 5.47e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 150  train 0.3155  val 0.3094  lr 5.41e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 151  train 0.3040  val 0.2545  lr 5.36e-04  vram peak 2.44G reserved 3.80G  14.6s
+ep 152  train 0.2629  val 0.2692  lr 5.30e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 153  train 0.2583  val 0.2602  lr 5.25e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 154  train 0.2573  val 0.2588  lr 5.19e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 155  train 0.2524  val 0.2741  lr 5.14e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 156  train 0.2617  val 0.2579  lr 5.08e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 157  train 0.2710  val 0.3358  lr 5.03e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 158  train 0.2724  val 0.2766  lr 4.97e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 159  train 0.2690  val 0.2501  lr 4.92e-04  vram peak 2.44G reserved 3.80G  14.5s *
+ep 160  train 0.2699  val 0.2583  lr 4.86e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 161  train 0.2916  val 0.3436  lr 4.81e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 162  train 0.2864  val 0.2945  lr 4.75e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 163  train 0.2646  val 0.3014  lr 4.70e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 164  train 0.2756  val 0.2578  lr 4.64e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 165  train 0.2577  val 0.2994  lr 4.59e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 166  train 0.2456  val 0.2516  lr 4.53e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 167  train 0.2598  val 0.2517  lr 4.48e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 168  train 0.3005  val 0.3048  lr 4.42e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 169  train 0.2488  val 0.2497  lr 4.37e-04  vram peak 2.44G reserved 3.80G  14.6s *
+ep 170  train 0.2585  val 0.2661  lr 4.31e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 171  train 0.2565  val 0.2573  lr 4.26e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 172  train 0.2456  val 0.2508  lr 4.20e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 173  train 0.2551  val 0.2532  lr 4.15e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 174  train 0.2357  val 0.2540  lr 4.10e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 175  train 0.2384  val 0.2632  lr 4.04e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 176  train 0.2387  val 0.2455  lr 3.99e-04  vram peak 2.44G reserved 3.80G  14.6s *
+ep 177  train 0.2478  val 0.2801  lr 3.93e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 178  train 0.2533  val 0.2383  lr 3.88e-04  vram peak 2.44G reserved 3.80G  14.4s *
+ep 179  train 0.2299  val 0.2462  lr 3.83e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 180  train 0.2395  val 0.3081  lr 3.77e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 181  train 0.2657  val 0.2574  lr 3.72e-04  vram peak 2.44G reserved 3.80G  14.6s
+ep 182  train 0.2620  val 0.2300  lr 3.67e-04  vram peak 2.44G reserved 3.80G  14.2s *
+ep 183  train 0.2301  val 0.2541  lr 3.61e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 184  train 0.2299  val 0.2539  lr 3.56e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 185  train 0.2327  val 0.2315  lr 3.51e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep 186  train 0.2255  val 0.2417  lr 3.45e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep 187  train 0.2238  val 0.2495  lr 3.40e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 188  train 0.2211  val 0.2385  lr 3.35e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 189  train 0.2234  val 0.2416  lr 3.30e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 190  train 0.2161  val 0.2291  lr 3.25e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 191  train 0.2200  val 0.2579  lr 3.19e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 192  train 0.2229  val 0.2556  lr 3.14e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 193  train 0.2125  val 0.2551  lr 3.09e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 194  train 0.2126  val 0.2268  lr 3.04e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 195  train 0.2138  val 0.2744  lr 2.99e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 196  train 0.2147  val 0.2249  lr 2.94e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 197  train 0.2101  val 0.2339  lr 2.89e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 198  train 0.2127  val 0.2300  lr 2.84e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 199  train 0.2068  val 0.2299  lr 2.79e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 200  train 0.2060  val 0.2260  lr 2.74e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 201  train 0.2032  val 0.2302  lr 2.69e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 202  train 0.2176  val 0.2819  lr 2.64e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 203  train 0.2043  val 0.2211  lr 2.60e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 204  train 0.2017  val 0.2430  lr 2.55e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 205  train 0.2025  val 0.2231  lr 2.50e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 206  train 0.1986  val 0.2303  lr 2.45e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 207  train 0.2002  val 0.2347  lr 2.40e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 208  train 0.1998  val 0.2215  lr 2.36e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 209  train 0.1967  val 0.2289  lr 2.31e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 210  train 0.1989  val 0.2213  lr 2.26e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 211  train 0.1956  val 0.2219  lr 2.22e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 212  train 0.1937  val 0.2245  lr 2.17e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 213  train 0.1924  val 0.2294  lr 2.13e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 214  train 0.1926  val 0.2165  lr 2.08e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 215  train 0.1916  val 0.2342  lr 2.04e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 216  train 0.1901  val 0.2190  lr 1.99e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 217  train 0.1885  val 0.2169  lr 1.95e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 218  train 0.1895  val 0.2199  lr 1.91e-04  vram peak 2.44G reserved 3.80G  14.5s
+ep 219  train 0.1890  val 0.2233  lr 1.86e-04  vram peak 2.44G reserved 3.80G  14.4s
+ep 220  train 0.1872  val 0.2180  lr 1.82e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 221  train 0.1854  val 0.2223  lr 1.78e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 222  train 0.1845  val 0.2199  lr 1.74e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 223  train 0.1875  val 0.2241  lr 1.70e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep 224  train 0.1846  val 0.2292  lr 1.65e-04  vram peak 2.44G reserved 3.80G  14.0s
+ep 225  train 0.1829  val 0.2174  lr 1.61e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 226  train 0.1830  val 0.2209  lr 1.57e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 227  train 0.1818  val 0.2197  lr 1.53e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 228  train 0.1811  val 0.2156  lr 1.49e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 229  train 0.1813  val 0.2196  lr 1.45e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 230  train 0.1847  val 0.2186  lr 1.42e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 231  train 0.1797  val 0.2169  lr 1.38e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 232  train 0.1789  val 0.2157  lr 1.34e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 233  train 0.1784  val 0.2145  lr 1.30e-04  vram peak 2.44G reserved 3.80G  14.3s *
+ep 234  train 0.1777  val 0.2145  lr 1.27e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 235  train 0.1779  val 0.2146  lr 1.23e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 236  train 0.1769  val 0.2181  lr 1.19e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 237  train 0.1762  val 0.2196  lr 1.16e-04  vram peak 2.44G reserved 3.80G  14.1s
+ep 238  train 0.1764  val 0.2156  lr 1.12e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 239  train 0.1755  val 0.2128  lr 1.09e-04  vram peak 2.44G reserved 3.80G  14.4s *
+ep 240  train 0.1749  val 0.2131  lr 1.05e-04  vram peak 2.44G reserved 3.80G  14.2s
+ep 241  train 0.1746  val 0.2144  lr 1.02e-04  vram peak 2.44G reserved 3.80G  14.3s
+ep 242  train 0.1738  val 0.2141  lr 9.87e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 243  train 0.1736  val 0.2149  lr 9.55e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 244  train 0.1736  val 0.2152  lr 9.23e-05  vram peak 2.44G reserved 3.80G  14.5s
+ep 245  train 0.1722  val 0.2150  lr 8.91e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 246  train 0.1720  val 0.2157  lr 8.60e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 247  train 0.1715  val 0.2198  lr 8.29e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 248  train 0.1720  val 0.2180  lr 7.99e-05  vram peak 2.44G reserved 3.80G  14.0s
+ep 249  train 0.1714  val 0.2182  lr 7.69e-05  vram peak 2.44G reserved 3.80G  14.1s
+ep 250  train 0.1706  val 0.2147  lr 7.40e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 251  train 0.1705  val 0.2126  lr 7.12e-05  vram peak 2.44G reserved 3.80G  14.3s *
+ep 252  train 0.1703  val 0.2169  lr 6.83e-05  vram peak 2.44G reserved 3.80G  14.7s
+ep 253  train 0.1704  val 0.2116  lr 6.56e-05  vram peak 2.44G reserved 3.80G  14.6s *
+ep 254  train 0.1700  val 0.2134  lr 6.29e-05  vram peak 2.44G reserved 3.80G  14.5s
+ep 255  train 0.1688  val 0.2138  lr 6.02e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 256  train 0.1693  val 0.2150  lr 5.76e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 257  train 0.1690  val 0.2160  lr 5.51e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 258  train 0.1680  val 0.2138  lr 5.26e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 259  train 0.1682  val 0.2110  lr 5.02e-05  vram peak 2.44G reserved 3.80G  14.4s *
+ep 260  train 0.1677  val 0.2136  lr 4.78e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 261  train 0.1672  val 0.2120  lr 4.55e-05  vram peak 2.44G reserved 3.80G  14.1s
+ep 262  train 0.1672  val 0.2153  lr 4.32e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 263  train 0.1668  val 0.2154  lr 4.10e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 264  train 0.1667  val 0.2110  lr 3.88e-05  vram peak 2.44G reserved 3.80G  14.5s *
+ep 265  train 0.1665  val 0.2131  lr 3.67e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 266  train 0.1663  val 0.2132  lr 3.47e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 267  train 0.1659  val 0.2125  lr 3.27e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 268  train 0.1656  val 0.2133  lr 3.08e-05  vram peak 2.44G reserved 3.80G  14.1s
+ep 269  train 0.1656  val 0.2135  lr 2.89e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 270  train 0.1656  val 0.2120  lr 2.71e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 271  train 0.1652  val 0.2098  lr 2.53e-05  vram peak 2.44G reserved 3.80G  14.3s *
+ep 272  train 0.1652  val 0.2107  lr 2.36e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 273  train 0.1648  val 0.2126  lr 2.20e-05  vram peak 2.44G reserved 3.80G  14.0s
+ep 274  train 0.1645  val 0.2117  lr 2.04e-05  vram peak 2.44G reserved 3.80G  14.1s
+ep 275  train 0.1647  val 0.2128  lr 1.89e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 276  train 0.1646  val 0.2117  lr 1.74e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 277  train 0.1642  val 0.2110  lr 1.60e-05  vram peak 2.44G reserved 3.80G  14.4s
+ep 278  train 0.1639  val 0.2114  lr 1.46e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 279  train 0.1643  val 0.2106  lr 1.33e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 280  train 0.1641  val 0.2120  lr 1.21e-05  vram peak 2.44G reserved 3.80G  14.3s
+ep 281  train 0.1639  val 0.2117  lr 1.09e-05  vram peak 2.44G reserved 3.80G  14.2s
+ep 282  train 0.1638  val 0.2128  lr 9.80e-06  vram peak 2.44G reserved 3.80G  14.3s
+ep 283  train 0.1638  val 0.2129  lr 8.75e-06  vram peak 2.44G reserved 3.80G  14.2s
+ep 284  train 0.1638  val 0.2112  lr 7.75e-06  vram peak 2.44G reserved 3.80G  14.2s
+ep 285  train 0.1635  val 0.2122  lr 6.81e-06  vram peak 2.44G reserved 3.80G  14.2s
+ep 286  train 0.1635  val 0.2116  lr 5.94e-06  vram peak 2.44G reserved 3.80G  14.1s
+ep 287  train 0.1634  val 0.2119  lr 5.12e-06  vram peak 2.44G reserved 3.80G  14.0s
+ep 288  train 0.1633  val 0.2106  lr 4.37e-06  vram peak 2.44G reserved 3.80G  14.3s
+ep 289  train 0.1633  val 0.2120  lr 3.67e-06  vram peak 2.44G reserved 3.80G  14.4s
+ep 290  train 0.1631  val 0.2116  lr 3.03e-06  vram peak 2.44G reserved 3.80G  14.1s
+ep 291  train 0.1633  val 0.2114  lr 2.46e-06  vram peak 2.44G reserved 3.80G  14.4s
+ep 292  train 0.1631  val 0.2115  lr 1.94e-06  vram peak 2.44G reserved 3.80G  14.2s
+ep 293  train 0.1631  val 0.2109  lr 1.49e-06  vram peak 2.44G reserved 3.80G  14.2s
+ep 294  train 0.1633  val 0.2115  lr 1.09e-06  vram peak 2.44G reserved 3.80G  14.6s
+ep 295  train 0.1636  val 0.2115  lr 7.60e-07  vram peak 2.44G reserved 3.80G  14.5s
+ep 296  train 0.1633  val 0.2110  lr 4.88e-07  vram peak 2.44G reserved 3.80G  14.3s
+ep 297  train 0.1634  val 0.2112  lr 2.76e-07  vram peak 2.44G reserved 3.80G  14.4s
+ep 298  train 0.1632  val 0.2113  lr 1.24e-07  vram peak 2.44G reserved 3.80G  14.2s
+ep 299  train 0.1630  val 0.2112  lr 3.38e-08  vram peak 2.44G reserved 3.80G  14.2s
+ep 300  train 0.1630  val 0.2113  lr 4.00e-09  vram peak 2.44G reserved 3.80G  14.5s
+
+VALIDATION MAE (inspiratory, u_out==0): 0.20984  (best epoch 271)
+MLEvolve benchmark: 0.14237  gap: +0.06747
+R     C   
+5.0   10.0    0.2020
+      20.0    0.1437
+      50.0    0.1340
+20.0  10.0    0.1906
+      20.0    0.1854
+      50.0    0.1829
+50.0  10.0    0.2064
+      20.0    0.3069
+      50.0    0.3123
+wrote submission.csv (603600 rows)  runtime=74.1 min  peak VRAM alloc=2.45 GB

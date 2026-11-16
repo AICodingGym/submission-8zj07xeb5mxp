@@ -26,6 +26,7 @@ p.add_argument("--batch", type=int, default=512)
 p.add_argument("--hidden", type=int, default=256)
 p.add_argument("--layers", type=int, default=4)
 p.add_argument("--lr", type=float, default=2e-3)
+p.add_argument("--dropout", type=float, default=0.0, help="between LSTM layers and in the head")
 p.add_argument("--patience", type=int, default=30, help="early-stop patience (epochs)")
 p.add_argument("--tag", default="bilstm_v1")
 args = p.parse_args()
@@ -115,18 +116,20 @@ print(f"data ready {time.time() - t0:.1f}s  train breaths={len(Xtr_t)} val breat
 
 
 class BiLSTM(nn.Module):
-    def __init__(self, n_in, hidden, layers):
+    def __init__(self, n_in, hidden, layers, dropout=0.0):
         super().__init__()
         self.inp = nn.Sequential(nn.Linear(n_in, hidden), nn.LayerNorm(hidden), nn.GELU())
-        self.lstm = nn.LSTM(hidden, hidden, num_layers=layers, batch_first=True, bidirectional=True)
-        self.head = nn.Sequential(nn.Linear(2 * hidden, hidden), nn.GELU(), nn.Linear(hidden, 1))
+        self.lstm = nn.LSTM(hidden, hidden, num_layers=layers, batch_first=True,
+                            bidirectional=True, dropout=dropout)
+        self.head = nn.Sequential(nn.Dropout(dropout), nn.Linear(2 * hidden, hidden), nn.GELU(),
+                                  nn.Linear(hidden, 1))
 
     def forward(self, x):
         h, _ = self.lstm(self.inp(x))
         return self.head(h).squeeze(-1)
 
 
-model = BiLSTM(len(FEATURES), args.hidden, args.layers).to(dev)
+model = BiLSTM(len(FEATURES), args.hidden, args.layers, args.dropout).to(dev)
 n_params = sum(p.numel() for p in model.parameters())
 opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-5)
 steps_per_epoch = (len(Xtr_t) + args.batch - 1) // args.batch
@@ -215,6 +218,7 @@ sample = pd.read_csv(DATA / "sample_submission.csv")
 assert len(sub) == len(sample) and (sub["id"].to_numpy() == sample["id"].to_numpy()).all()
 assert np.isfinite(sub["pressure"]).all()
 sub.to_csv(OUT / "submission.csv", index=False)
+sub.to_csv(OUT / f"submission_{args.tag}.csv", index=False)
 
 runtime = time.time() - t0
 peak = torch.cuda.max_memory_allocated() / 2**30
@@ -224,7 +228,7 @@ log = OUT / "experiments.csv"
 pd.DataFrame([{
     "experiment": args.tag, "val_mae": round(val_mae, 5), "best_iter": best_ep,
     "runtime_s": round(runtime, 1),
-    "notes": f"BiLSTM h={args.hidden} L={args.layers} bs={args.batch} lr={args.lr} "
+    "notes": f"BiLSTM h={args.hidden} L={args.layers} bs={args.batch} lr={args.lr} drop={args.dropout} "
              f"OneCycle {args.epochs}ep, masked L1, AMP, {len(FEATURES)} feats; peak VRAM {peak:.2f}GB; "
              + json.dumps({"params": n_params}),
 }]).to_csv(log, mode="a", header=not log.exists(), index=False)
