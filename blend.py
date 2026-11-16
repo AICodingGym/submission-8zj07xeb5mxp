@@ -132,6 +132,24 @@ assert np.isfinite(sub["pressure"]).all()
 sub.to_csv(OUT / "submission_blend.csv", index=False)
 print(f"wrote submission_blend.csv  runtime={time.time() - t0:.1f}s")
 
+# ---- optional 3rd model trained on ALL breaths (lstm.py --full) ----
+# Its val predictions are in-sample, so its weight can't be tuned on the split.
+# Fixed rule: 50% v3 + 50% of the tuned v1/v2 blend.
+v3_ckpt = OUT / "checkpoints" / "bilstm_v3_full.pt"
+if v3_ckpt.exists():
+    m = BiLSTM(len(FEATURES), head_dropout=True).to(dev)
+    m.load_state_dict(torch.load(v3_ckpt))
+    v3v, v3t = predict(m, Xva_t), predict(m, Xte_t)
+    print(f"\nbilstm_v3_full: in-sample val MAE {mae(v3v):.5f} (NOT a validation score)")
+    print(f"corr(v3, v1v2 blend) on test insp rows: "
+          f"{np.corrcoef(v3t[Xte[:, :, u] == 0], bt[Xte[:, :, u] == 0])[0, 1]:.5f}")
+    final = 0.5 * v3t + 0.5 * bt
+    sub3 = pd.DataFrame({"id": te_ids.ravel(), "pressure": final.ravel()}).sort_values("id")
+    assert (sub3["id"].to_numpy() == sample["id"].to_numpy()).all()
+    assert np.isfinite(sub3["pressure"]).all()
+    sub3.to_csv(OUT / "submission_blend3.csv", index=False)
+    print(f"wrote submission_blend3.csv  (0.5*v3 + {0.5 * best_w:.2f}*v2 + {0.5 * (1 - best_w):.2f}*v1)")
+
 log = OUT / "experiments.csv"
 pd.DataFrame([{
     "experiment": f"blend_v1v2_w{best_w:.1f}", "val_mae": round(best, 5), "best_iter": "",
