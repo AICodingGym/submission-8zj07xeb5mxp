@@ -1,0 +1,37 @@
+loaded + features: 7.7s  train=(5432400, 24) test=(603600, 23)
+train breaths=54324  val breaths=13581
+[0]	val-mae:6.79498
+[100]	val-mae:0.85343
+[200]	val-mae:0.77652
+[300]	val-mae:0.73409
+[400]	val-mae:0.70734
+[500]	val-mae:0.68963
+[600]	val-mae:0.67736
+[700]	val-mae:0.66663
+[800]	val-mae:0.65906
+[900]	val-mae:0.65227
+[1000]	val-mae:0.64607
+[1100]	val-mae:0.64063
+[1200]	val-mae:0.63623
+[1300]	val-mae:0.63292
+[1400]	val-mae:0.63013
+[1500]	val-mae:0.62743
+[1600]	val-mae:0.62471
+[1700]	val-mae:0.62252
+[1800]	val-mae:0.62032
+[1900]	val-mae:0.61868
+[1999]	val-mae:0.61701
+
+VALIDATION MAE (inspiratory, u_out==0): 0.61701
+MLEvolve benchmark: 0.14237  gap: +0.47464
+R   C 
+5   10    0.5521
+    20    0.4556
+    50    0.2914
+20  10    0.5962
+    20    0.4788
+    50    0.4668
+50  10    0.8969
+    20    0.7670
+    50    0.8087
+wrote submission.csv (603600 rows)  runtime=1138.6s

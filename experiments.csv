@@ -1,0 +1,2 @@
+experiment,val_mae,best_iter,runtime_s,notes
+baseline_xgb_v1,0.61701,1999,1138.6,"XGB hist, L1 obj, insp-only training, 21 feats, 20% breath holdout seed 42"
