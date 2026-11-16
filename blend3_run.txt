@@ -1,0 +1,33 @@
+bilstm_v1: val MAE 0.22810
+bilstm_v2: val MAE 0.20984
+
+weight on v2 -> val MAE
+  w=0.0  0.22810
+  w=0.1  0.22087
+  w=0.2  0.21475
+  w=0.3  0.20976
+  w=0.4  0.20595
+  w=0.5  0.20337
+  w=0.6  0.20206
+  w=0.7  0.20202
+  w=0.8  0.20327
+  w=0.9  0.20581
+  w=1.0  0.20984
+
+BEST BLEND w_v2=0.7  val MAE 0.20202  (v2 alone 0.20984, gain +0.00782)
+Plain 50/50 average: 0.20337
+R     C   
+5.0   10.0    0.1934
+      20.0    0.1344
+      50.0    0.1268
+20.0  10.0    0.1866
+      20.0    0.1783
+      50.0    0.1743
+50.0  10.0    0.1981
+      20.0    0.3031
+      50.0    0.3009
+wrote submission_blend.csv  runtime=12.2s
+
+bilstm_v3_full: in-sample val MAE 0.10896 (NOT a validation score)
+corr(v3, v1v2 blend) on test insp rows: 0.99959
+wrote submission_blend3.csv  (0.5*v3 + 0.35*v2 + 0.15*v1)

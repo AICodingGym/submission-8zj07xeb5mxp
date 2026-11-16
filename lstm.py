@@ -226,9 +226,11 @@ for ep in range(start_ep, args.epochs + 1):
         scaler.scale(loss).backward()
         scaler.unscale_(opt)
         nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-        scaler.step(opt)
-        scaler.update()
-        sched.step()
+        scale_before = scaler.get_scale()
+        scaler.step(opt)  # skipped internally if fp16 grads overflowed (inf/NaN)
+        scaler.update()   # ...in which case the loss scale is reduced
+        if scaler.get_scale() >= scale_before:  # optimizer really stepped
+            sched.step()  # keeps LR schedule in step with real updates (no PyTorch warning)
         tot += loss.item() * len(idx)
     tr_mae = tot / len(Xtr_t)
     va_mae = masked_l1(predict(Xva_t), yva_t, mva_t).item()
@@ -297,3 +299,4 @@ pd.DataFrame([{
              f"OneCycle {args.epochs}ep, masked L1, AMP, {len(FEATURES)} feats; peak VRAM {peak:.2f}GB; "
              + json.dumps({"params": n_params, "seed": args.seed, "full": args.full}),
 }]).to_csv(log, mode="a", header=not log.exists(), index=False)
+

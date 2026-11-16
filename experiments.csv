@@ -3,3 +3,5 @@ baseline_xgb_v1,0.61701,1999.0,1138.6,"XGB hist, L1 obj, insp-only training, 21 
 bilstm_v1,0.2281,191.0,2948.4,"BiLSTM h=256 L=4 bs=512 lr=0.002 OneCycle 200ep, masked L1, AMP, 19 feats; peak VRAM 2.45GB; {""params"": 5920769}"
 bilstm_v2,0.20984,271.0,4447.2,"BiLSTM h=256 L=4 bs=512 lr=0.001 drop=0.2 OneCycle 300ep, masked L1, AMP, 19 feats; peak VRAM 2.45GB; {""params"": 5920769}"
 blend_v1v2_w0.7,0.20202,,13.0,0.7*bilstm_v2 + 0.3*bilstm_v1; weight picked on the val split (slightly optimistic); 50/50 = 0.20337
+bilstm_v3_full,in-sample 0.10896,300.0,5188.0,"BiLSTM h=256 L=4 bs=512 lr=0.001 drop=0.2 OneCycle 300ep, masked L1, AMP, 19 feats; peak VRAM 2.53GB; {""params"": 5920769, ""seed"": 7, ""full"": true}"
+blend3_v1v2v3,n/a (v3 saw val breaths),,12.2,"0.5*bilstm_v3_full + 0.35*bilstm_v2 + 0.15*bilstm_v1; fixed weights, unvalidated; corr with v1v2 blend on test insp rows 0.99959"
